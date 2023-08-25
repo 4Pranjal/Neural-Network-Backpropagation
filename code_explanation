@@ -1,0 +1,47 @@
+This code demonstrates the implementation of a simple feedforward neural network using backpropagation for training and prediction. The network architecture consists of an input layer, a hidden layer, and an output layer. Here's a detailed explanation of the code:
+
+1. **Importing Libraries**:
+    - `numpy` is imported to perform mathematical operations.
+    
+2. **Sigmoid Activation Function**:
+    - The `sigmoid` function is defined to compute the sigmoid activation of a given value.
+    - The `sigmoid_derivative` function is defined to calculate the derivative of the sigmoid function.
+
+3. **Backpropagation Class**:
+    - The `Backpropagation` class is defined to implement the neural network.
+    - In the constructor (`__init__`), the network's architecture is defined, and initial weights and biases are initialized.
+    
+4. **Forward Propagation**:
+    - The `forward` method implements forward propagation through the network, computing activations of hidden and output layers using sigmoid activation function.
+
+5. **Backward Propagation**:
+    - The `backward` method implements backward propagation to update weights and biases based on calculated errors.
+    
+6. **Training**:
+    - The `train` method trains the network using forward and backward propagation for a specified number of epochs and learning rate.
+    
+7. **Prediction**:
+    - The `predict` method predicts the output for new input data using the trained network.
+    
+8. **Dataset Definition**:
+    - A toy dataset (`dataset`) is defined, where each row represents input features and the last column represents the output target.
+    
+9. **Dataset Splitting**:
+    - The dataset is split into input data (`X`) and output data (`y`).
+    
+10. **Instantiate the Neural Network**:
+    - The `Backpropagation` class is instantiated with the specified input size, hidden size, and output size.
+    
+11. **Training**:
+    - The instantiated neural network is trained using the `train` method with the defined number of epochs and learning rate.
+    
+12. **New Data for Prediction**:
+    - A new data point (`new_data`) is prepared for prediction.
+    
+13. **Prediction**:
+    - The trained neural network predicts the output for the new data using the `predict` method.
+    
+14. **Print Prediction**:
+    - The predicted output is printed to the console.
+
+Overall, this code demonstrates the process of creating a simple neural network using backpropagation to train on a dataset and make predictions on new input data. Note that this example uses a simplified dataset and architecture; real-world scenarios often involve more complex networks and larger datasets.
